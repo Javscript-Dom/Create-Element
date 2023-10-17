@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(103, 161, 228);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.292);
+    cursor: pointer;
+}
+
+#parent-div{
+    width: 300px;
+    height: 300px;
+    padding: 5px 0 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    overflow: auto;
+}
+
+#parent-div::-webkit-scrollbar{
+    width: 7px;
+    overflow: hidden;
+}
+
+#parent-div::-webkit-scrollbar-thumb{
+    background-color: #c7c7c7;
+    border-radius: 10px;
+}
+
+#child-div{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
